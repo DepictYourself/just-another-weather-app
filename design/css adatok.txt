@@ -1,0 +1,20 @@
+Háttér színátmenet
+
+zöldes-kék: #2ba285
+világoskék: #18a8de;
+
+
+szöveg: freeCodeCamp Weather app<br> by Agoston and Veronika <3
+betútípus: Arial black és arial
+betû szín: #e9ded0
+betû méret: 48px
+kisebb betû méret: 36px;
+
+idõjárás doboz:
+lekerekítés: 33px
+szélesség: 650px de ez változzon a képernyõnek megfelelõen
+magasság: 250px de ez is változzon
+
+szöveg típus: arial black
+szöveg szín: #534741
+árnyék: megbeszélés tárgya
