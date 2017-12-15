@@ -1,0 +1,26 @@
+/* ide jön a css :) */
+
+main {
+    height: 100vh;
+    background: linear-gradient(#0bbe92, #1695c7);
+    
+}
+
+header {
+    background-color: rgb(66, 64, 64);
+    padding: 15px;
+    color: #e9ded0;
+    font-size: 36px;
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #bdb4a8;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
