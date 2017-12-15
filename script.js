@@ -1,6 +1,6 @@
 /* 
-written by Agoston Toth
-https://github.com/DepictYourself
+    written by Agoston Toth
+    https://github.com/DepictYourself
 */
 
 /* 
@@ -15,7 +15,7 @@ function geoSuccess(position) {
     '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
 };
 
-function geoErorr() {
+function geoError() {
     //TODO handle error
 };
 
@@ -23,7 +23,7 @@ function geoErorr() {
 if ("geolocation" in navigator) {
     console.log("geolocation is available");
 
-    navigator.geolocation.getCurrentPosition(geoSuccess, geoErorr);
+    navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
 
 } else {
     console.log("geolocation IS NOT available");
