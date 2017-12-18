@@ -7,6 +7,11 @@ main {
 }
 
 header {
+    position: absolute;
+    top:  0;
+    left: 0;
+    right: 0;
+    display: block;
     background-color: rgb(66, 64, 64);
     padding: 15px;
     color: #e6ded4;
