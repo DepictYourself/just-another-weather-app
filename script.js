@@ -3,6 +3,8 @@
     https://github.com/DepictYourself
 */
 
+const main = document.getElementsByTagName("main").item(0);
+
 /*
     This function makes an ajax call to an API
     we convert the message to a usable json object
@@ -12,11 +14,12 @@ function fccApiCall(latitude, longitude) {
     fetch(`https://fcc-weather-api.glitch.me/api/current?lat=${latitude}&lon=${longitude}`)
     .then( response => response.json())
     .then( data => {
-        document.getElementById('test').innerHTML = 
+        //TODO Make a proper show results function or module.
+        main.innerHTML = 
         `
-        lat: ${data.coord.lat}, lon: ${data.coord.lon}
-        ${data.name}, ${data.sys.country}
-        ${data.main.temp}
+        <p>${data.name}, ${data.sys.country}</p>
+        <p>${data.main.temp} <span id="degree">°C</span></p>
+        <p>${data.weather[0].main}</p>
         `;
     })
     
@@ -39,12 +42,15 @@ function geoError() {
 
 /* Checking if the geolocation is supported in the browser */
 if ("geolocation" in navigator) {
-    console.log("geolocation is available");
+    main.innerHTML = "geolocation is available";
 
+    /* 
+    Trying to get the users position. If everything goes ok 
+    the geoSuccess function will run
+    If we can't, the geoError function will run.
+    */
     navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
 
 } else {
-    console.log("geolocation IS NOT available");
+    main.innerHTML = "geolocation IS NOT available";
 }
-
-

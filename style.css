@@ -1,9 +1,11 @@
 /* ide jön a css :) */
 
-main {
+body {
     height: 100vh;
     background: linear-gradient(#0bbe92, #1695c7);
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
@@ -11,7 +13,6 @@ header {
     top:  0;
     left: 0;
     right: 0;
-    display: block;
     background-color: rgb(66, 64, 64);
     padding: 15px;
     color: #e6ded4;
@@ -38,6 +39,22 @@ a:hover {
     color: rgb(241, 233, 224);
 }
 
-a:visited {
-    color: #a79884;
+main {
+    background-color: rgb(166, 180, 182);
+    /*TODO add background images*/
+    padding: 35px 50px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 33px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+main p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #534741;
+    margin-bottom: 15px;
+}
+
+main p:last-child {
+    margin-bottom: 0;
 }
