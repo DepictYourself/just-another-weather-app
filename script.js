@@ -6,7 +6,7 @@ https://github.com/DepictYourself
 const main = document.getElementsByTagName("main").item(0);
 
 /*
-This function makes an ajax call to an API
+This function makes a call to an API
 we convert the message to a usable json object
 then display the received data on the webpage
 */
@@ -18,8 +18,8 @@ function fccApiCall(latitude, longitude) {
 }
 
 /* 
-    data argument is the received wether data from the API
-    This function takes care about putting that data on the page
+    data argument is the received weather data from the API
+    This function will put that data on the page
     and setting the right background image to the main box
 */
 function displayData(data) {
@@ -55,7 +55,7 @@ if ("geolocation" in navigator) {
     /* 
     Trying to get the users position. If everything goes ok 
     the geoSuccess function will run
-    If we can't, the geoError function will run.
+    If something goes wrong the geoError function will run.
     */
     navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
     
