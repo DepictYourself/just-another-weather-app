@@ -26,7 +26,7 @@ function displayData(data) {
     main.innerHTML = 
     `
     <p>${data.name}, ${data.sys.country}</p>
-    <p>${data.main.temp} <span id="degree">°C</span></p>
+    <p>${Math.round(data.main.temp * 10) / 10} <span id="degree">°C</span></p>
     <p>${data.weather[0].main}</p>
     `;
 
