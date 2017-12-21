@@ -16,13 +16,12 @@ function fccApiCall(latitude, longitude) {
     fetch(`https://fcc-weather-api.glitch.me/api/current?lat=${latitude}&lon=${longitude}`)
     .then( response => response.json())
     .then( data => displayData(data))
-    
 };
 
-/* 
+/*
     data argument is the received weather data from the API
     This function will put that data on the page
-    and setting the right background image to the main box
+    and set the right background image to the main box
 */
 function displayData(data) {
     let city = data.name;
