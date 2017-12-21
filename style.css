@@ -40,7 +40,6 @@ a:hover {
 }
 
 main {
-    background-image: url('img/clouds.jpg');
     background-color: rgb(166, 180, 182);
     background-position: top left;
     background-repeat: no-repeat;
