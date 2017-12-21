@@ -78,7 +78,7 @@ if ("geolocation" in navigator) {
     main.innerHTML = 
     `
     <!-- loading animation -->
-    <p>Loading</p>
+    <p>Waiting</p>
     <div class="sk-cube-grid">
     <div class="sk-cube sk-cube1"></div>
     <div class="sk-cube sk-cube2"></div>
