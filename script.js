@@ -66,20 +66,28 @@ function geoSuccess(position) {
 };
 
 function geoError() {
-    //TODO handle error
+    main.innerHTML =
+    `
+    <p>Error!</p>
+    <img width="75px" src="img/sad-face.svg" alt="sad face">
+    `
 };
 
 /* Checking if the geolocation is supported in the browser */
 if ("geolocation" in navigator) {
-    main.innerHTML = "geolocation is available";
+    main.innerHTML = "<p>Loading</p>";
     
     /* 
         Trying to get the users position. If everything goes ok 
         the geoSuccess function will run
         If something goes wrong the geoError function will run.
     */
-    navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
+    navigator.geolocation.getCurrentPosition(geoError, geoError);
     
 } else {
-    main.innerHTML = "geolocation IS NOT available";
+    main.innerHTML = 
+    `
+    <p>Geolocation not supported</p>
+    <img width="75px" src="img/sad-face.svg" alt="sad face">
+    `;
 }
