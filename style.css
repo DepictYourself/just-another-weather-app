@@ -58,8 +58,20 @@ main p {
     margin-bottom: 15px;
 }
 
+main p:nth-child(2) {
+    display: inline-block;
+}
+
 main p:last-child {
     margin-bottom: 0;
+}
+
+#degree {
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    color: #352e2b;
+    margin-left: 3px;
 }
 
 .sk-cube-grid {
