@@ -117,7 +117,7 @@ if ("geolocation" in navigator) {
         the geoSuccess function will run
         If something goes wrong the geoError function will run.
     */
-    navigator.geolocation.getCurrentPosition(geoError, geoError);
+    navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
 
 } else {
     main.innerHTML =
