@@ -89,7 +89,7 @@ function geoError() {
     main.innerHTML =
         `
     <p>Error!</p>
-    <img width="75px" src="img/sad-face.svg" alt="sad face">
+    <img id="error" src="img/sad-face.svg" alt="sad face">
     `
 };
 
@@ -117,12 +117,12 @@ if ("geolocation" in navigator) {
         the geoSuccess function will run
         If something goes wrong the geoError function will run.
     */
-    navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
+    navigator.geolocation.getCurrentPosition(geoError, geoError);
 
 } else {
     main.innerHTML =
         `
     <p>Geolocation not supported</p>
-    <img width="75px" src="img/sad-face.svg" alt="sad face">
+    <img id="error" src="img/sad-face.svg" alt="sad face">
     `;
 }

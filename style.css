@@ -72,6 +72,12 @@ main p:last-child {
     margin-bottom: 0;
 }
 
+main img#error {
+    width: 75px;
+    height: 75px;
+    margin: 12px 25px;
+}
+
 #degree {
     text-decoration: underline;
     cursor: pointer;
@@ -177,7 +183,4 @@ main p:last-child {
         position: unset;
         width: 100vw;
     }
-
-
-    
 }
