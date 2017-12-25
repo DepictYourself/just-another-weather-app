@@ -1,9 +1,14 @@
 # just-another-weather-app
 
-Simple one page web application. It will show you the weather in your location. It is using fairly new webtechnologies such as: 
-HTML5 Geolocation, 
-CSS3 Flexbox and other features,
-JavaScript ES6 syntax,
-Fetch API
+Single page weather application. It will show you the weather in your location.
 
-You will need an up to date webbrowser so everything works properly.
+## Webtechnologies used in this project
+
+It is using fairly new webtechnologies such as: 
+ * Geolocation API [browser support] (https://caniuse.com/#search=geolocation)
+ * Fetch API [browser support] (https://caniuse.com/#feat=fetch)
+ * Flexbox [browser support] (https://caniuse.com/#search=flexbox)
+ * JavaScript ES6 syntax
+  - template literals [browser support] (https://caniuse.com/#search=template%20literals)
+  - let [browser support] (https://caniuse.com/#feat=let)
+  - arrow functions [browser support] (https://caniuse.com/#feat=arrow-functions)
